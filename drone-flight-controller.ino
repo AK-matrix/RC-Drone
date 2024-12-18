@@ -1,5 +1,4 @@
-//Credits to @lobodol for the flight controller software (MIT License)
-// ---------------------------------------------------------------------------
+
 #include <Wire.h>
 // ------------------- Define some constants for convenience -----------------
 #define CHANNEL1 0
