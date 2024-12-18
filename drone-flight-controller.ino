@@ -1,8 +1,4 @@
-/**
- * The software is provided "as is", without any warranty of any kind.
- * Feel free to edit it if needed.
- */
-
+//Credits to @lobodol for the flight controller software (MIT License)
 // ---------------------------------------------------------------------------
 #include <Wire.h>
 // ------------------- Define some constants for convenience -----------------
@@ -288,21 +284,7 @@ void calculateAccelerometerAngles() {
     }
 }
 
-/**
- * Calculate motor speed for each motor of an X quadcopter depending on received instructions and measures from sensor
- * by applying PID control.
- *
- * (A) (B)     x
- *   \ /     z ↑
- *    X       \|
- *   / \       +----→ y
- * (C) (D)
- *
- * Motors A & D run clockwise.
- * Motors B & C run counter-clockwise.
- *
- * Each motor output is considered as a servomotor. As a result, value range is about 1000µs to 2000µs
- */
+
 void pidController() {
     float yaw_pid      = 0;
     float pitch_pid    = 0;
